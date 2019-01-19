@@ -67,7 +67,7 @@ def runner
   welcome 
   total = initial_round
   hit?(total)
-  until hit?(total) == card_total do 
+  until input == "s"
     hit?(total)
     final = hit?(total)
   end
