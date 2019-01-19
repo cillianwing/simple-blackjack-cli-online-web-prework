@@ -66,12 +66,7 @@ def runner
   # code runner here
   welcome 
   total = initial_round
-  hit?(total)
-  input = gets.chomp
-  until input == "s"
-    hit?(total)
-    final = hit?(total)
-  end
+  until total > 21 
   end_game(final)
 end
     
