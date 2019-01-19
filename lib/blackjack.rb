@@ -67,6 +67,7 @@ def runner
   welcome 
   total = initial_round
   hit?(total)
+  input = gets.chomp
   until input == "s"
     hit?(total)
     final = hit?(total)
