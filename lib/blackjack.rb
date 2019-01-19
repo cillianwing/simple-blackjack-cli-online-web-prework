@@ -65,11 +65,11 @@ end
 def runner
   # code runner here
   welcome 
-  start_cards = initial_round
-  hit?(start_cards)
-  until hit?(start_cards) == card_total do 
-    hit?(start_cards)
-    total = hit?(start_cards)
+  total = initial_round
+  hit?(total)
+  until hit?(total) == card_total do 
+    hit?(total)
+    total = hit?(total)
   end
   end_game(total)
 end
