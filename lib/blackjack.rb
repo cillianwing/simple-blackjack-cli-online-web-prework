@@ -69,6 +69,7 @@ def runner
   until gets.chomp == "s" do
     hit?(start_cards)
     total = hit?(start_cards)
+  end_game
   end_game(total)
 end
     
