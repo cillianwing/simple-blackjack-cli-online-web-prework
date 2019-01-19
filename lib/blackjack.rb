@@ -64,5 +64,7 @@ end
 
 def runner
   # code runner here
+  welcome 
+  start_count = initial_round
 end
     
