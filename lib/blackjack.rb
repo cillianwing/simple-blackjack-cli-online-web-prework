@@ -66,7 +66,9 @@ def runner
   # code runner here
   welcome 
   start_cards = initial_round
-  total = hit?(start_cards)
+  until gets.chomp == "s" do
+    hit?(start_cards)
+    total = hit?(start_cards)
   end_game(total)
 end
     
