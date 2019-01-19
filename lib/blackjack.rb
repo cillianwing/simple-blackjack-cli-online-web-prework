@@ -66,6 +66,7 @@ def runner
   # code runner here
   welcome 
   start_cards = initial_round
-  hit?(start_cards)
+  total = hit?(start_cards)
+  end_game(total)
 end
     
