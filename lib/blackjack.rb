@@ -69,8 +69,8 @@ def runner
   hit?(total)
   until hit?(total) == card_total do 
     hit?(total)
-    total = hit?(total)
+    final = hit?(total)
   end
-  end_game(total)
+  end_game(final)
 end
     
